@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2016-07-01
+  numero: 1
+  articulos: one
+  piezas: 1
+  solicita: MyString
+  autoriza: MyString
+
+two:
+  fecha: 2016-07-01
+  numero: 1
+  articulos: two
+  piezas: 1
+  solicita: MyString
+  autoriza: MyString

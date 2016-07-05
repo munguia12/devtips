@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @departure.fecha %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @departure.numero %>
+</p>
+
+<p>
+  <strong>Articulos:</strong>
+  <%= @departure.articulos%>
+</p>
+
+<p>
+  <strong>Piezas:</strong>
+  <%= @departure.piezas %>
+</p>
+
+<p>
+  <strong>Solicita:</strong>
+  <%= @departure.solicita %>
+</p>
+
+<p>
+  <strong>Autoriza:</strong>
+  <%= @departure.autoriza %>
+</p>
+
+<%= link_to 'Edit', edit_departure_path(@departure) %> |
+<%= link_to 'Back', departures_path %>

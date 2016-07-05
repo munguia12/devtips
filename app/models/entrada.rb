@@ -1,0 +1,3 @@
+class Entrada < ApplicationRecord
+	
+end

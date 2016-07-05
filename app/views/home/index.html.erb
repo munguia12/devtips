@@ -1,0 +1,9 @@
+<div class="margin1"> 
+	  <h1 class="center">
+	  <% if current_user %>
+	                   <%= current_user.nombre %> <br> Bienvenido al Almacen de Grupo Oro <br></h1>
+	              <%else %>
+	              <h3 class="center">Por favor inicia sesion para realizar cambios</h3>
+	              <h5 class="center"><%= link_to 'Inicia Sesion', new_user_session_path %> </h5>
+	  <% end %>
+ </div>

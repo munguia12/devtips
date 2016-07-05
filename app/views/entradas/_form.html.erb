@@ -1,0 +1,91 @@
+<%= form_for(entrada) do |f| %>
+  <% if entrada.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entrada.errors.count, "error") %> prohibited this entrada from being saved:</h2>
+
+      <ul>
+      <% entrada.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="row around-xs">
+    <div class="col-xs-2">
+    <div class="box">
+      <div class="field">
+
+        <%= f.label :fecha %>
+        <%= f.date_select :fecha %>
+      </div>
+
+      <div class="field">
+        <%= f.label :remision %>
+        <%= f.text_field :remision %>
+      </div>
+    </div>
+           
+</div>
+
+<div class="col-xs-2">
+  <div class="box">
+    <div class="field">
+        <%= f.label :cantidad %>
+        <%= f.number_field :cantidad %>
+      </div>
+
+      <div class="field">
+        <%= f.label :articulo %>
+        <%= collection_select(:entradas, :articulos, Producto.all, :articulos, :articulos, { prompt: "selecciona un producto"}, {:multiple => false})%>
+      </div>
+
+      <div class="field">
+        <%= f.label :refaccion %>
+        <%= f.text_area :refaccion %>
+      </div>
+  </div>
+</div>
+<div class="col-xs-2">
+  <div class="box">
+    <div class="field">
+        <%= f.label :recibe %>
+        <%= f.text_field :recibe %>
+      </div>
+
+      <div class="field">
+        <%= f.label :proveedor %>
+        <%= f.text_field :proveedor %>
+      </div>
+
+      <div class="field">
+        <%= f.label :contacto %>
+        <%= f.text_field :contacto %>
+      </div>
+  </div>
+</div>
+<div class="col-xs-2">
+  <div class="box">
+     <div class="field">
+        <%= f.label :autoriza %>
+        <%= f.text_field :autoriza %>
+      </div>
+
+      <div class="field">
+        <%= f.label :solicta %>
+        <%= f.text_field :solicta %>
+      </div>
+  </div>
+</div>
+       
+
+     
+
+      <div class="row center-xs actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+
+    
+</div>
+
+  

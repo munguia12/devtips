@@ -1,0 +1,47 @@
+<%= form_for(departure) do |f| %>
+  <% if departure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(departure.errors.count, "error") %> prohibited this departure from being saved:</h2>
+
+      <ul>
+      <% departure.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fecha %>
+    <%= f.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numero %>
+    <%= f.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= f.label :articulos_id %>
+    <%= collection_select(:departure, :articulos, Producto.all, :articulos, :articulos, { prompt: true}, {:multiple => false})%>
+  </div>
+
+  <div class="field">
+    <%= f.label :piezas %>
+    <%= f.number_field :piezas %>
+  </div>
+
+  <div class="field">
+    <%= f.label :solicita %>
+    <%= f.text_field :solicita %>
+  </div>
+
+  <div class="field">
+    <%= f.label :autoriza %>
+    <%= f.text_field :autoriza %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

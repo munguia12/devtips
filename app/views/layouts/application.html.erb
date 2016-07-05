@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inventarios</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+  </head>
+
+  <body>
+
+      <% if current_user %>
+    <header>
+      <nav class="be-red white large-padding">
+        <ul class="no-list row center-xs middle-xs">
+        <li class="col-md ">
+            <h1 id="logo"class="no-margin">GRUPO ORO PAEZ</h1>
+        </li>
+          <li class="col-md"><%= link_to "Inicio", root_path%></li>
+          <li class="col-md"><%= link_to "Productos",  "productos" %></li>
+          <li class="col-md"><%= link_to "Entradas",  "entradas" %></li>
+          <li class="col-md"><%= link_to "Salidas",  "departures" %></li>                
+                <% if current_user %>
+                    <li class="col-md">Logged in as <%= current_user.email %></li>
+                    <li class="col-md"><%= link_to 'Edit Profile',edit_user_registration_path %></li>
+                    <li class="col-md"><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+                <% else %>
+                    <li class="col-md"><%= link_to 'Inicia Sesion', new_user_session_path %></li>
+                <% end %>
+
+
+        </ul>
+      </nav>
+    </header>
+<% end %>
+  
+  <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>

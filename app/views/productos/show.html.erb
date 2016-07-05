@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Articulos:</strong>
+  <%= @producto.articulos %>
+</p>
+
+<p>
+  <strong>Existencia:</strong>
+  <%= @producto.existencia %>
+</p>
+
+<p>
+  <strong>Stockmin:</strong>
+  <%= @producto.stockmin %>
+</p>
+
+<p>
+  <strong>Stockmax:</strong>
+  <%= @producto.stockmax %>
+</p>
+
+<p>
+  <strong>Disponibles:</strong>
+  <%= @producto.disponibles %>
+
+
+
+  
+</p>
+
+<%= link_to 'Edit', edit_producto_path(@producto) %> |
+<%= link_to 'Back', productos_path %>
