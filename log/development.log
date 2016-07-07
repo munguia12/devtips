@@ -41437,3 +41437,778 @@ Processing by ProductosController#index as HTML
 Completed 200 OK in 136ms (Views: 121.0ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" ORDER BY "ar_internal_metadata"."key" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_salida1s_on_articulo_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_salida1s_on_articulo_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_ssalidas_on_articulos_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_ssalidas_on_articulos_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for ::1 at 2016-07-06 16:40:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by HomeController#index as HTML
+Started GET "/" for ::1 at 2016-07-06 16:40:50 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (64.0ms)
+  Rendered home/index.html.erb within layouts/application (73.0ms)
+Completed 500 Internal Server Error in 748ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_failed - C:/toro/inventarios/tmp/cache/assets/sprockets/v3.0/s_/s_VB5kPzEeWPSgoIfjcXlMAk8DMyg8wCd_u2Gc6M1I0.cache):
+    4:     <title>Inventarios</title>
+    5:     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    6:     <%= csrf_meta_tags %>
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     
+   10:   </head>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___561708841_34888224'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1187.1ms)
+Completed 200 OK in 3849ms (Views: 3762.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-06 16:41:00 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 133ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-07-06 16:41:02 -0500
+Processing by Devise::SessionsController#new as HTML
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:sign_up) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:10)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:account_update) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:11)
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (282.0ms)
+Completed 200 OK in 488ms (Views: 462.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-07-06 16:41:07 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EXsHGm+uliVbKa+UGCXJCnKlQFKhFbqe2Mg21RZdAHbV2EheakyMgsrQoEgjkphXYqik0iJi6hYk3sTo58eiVQ==", "user"=>{"email"=>"prueba1@12.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:sign_up) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:10)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:account_update) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:11)
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "prueba1@12.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 391ms (ActiveRecord: 6.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EXsHGm+uliVbKa+UGCXJCnKlQFKhFbqe2Mg21RZdAHbV2EheakyMgsrQoEgjkphXYqik0iJi6hYk3sTo58eiVQ==", "user"=>{"email"=>"prueba1@12.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:sign_up) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:10)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:account_update) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:11)
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 342ms (Views: 169.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-07-06 16:41:11 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0xMRLe9KToynNjtTt/d/lnXOsEVIzwzstTCTsVvrvqm+CgZa5AEo9KkcHfSrDukjVkYpOpC39q3OJd8DeuR3Uw==", "user"=>{"email"=>"prueba1@12.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:sign_up) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:10)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:account_update) do |user|
+    # Your block here.
+  end
+ (called from configure_permitted_parameters at C:/toro/inventarios/app/controllers/application_controller.rb:11)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "prueba1@12.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", 2016-07-06 21:41:11 UTC], ["last_sign_in_at", 2016-07-04 18:50:18 UTC], ["sign_in_count", 17], ["updated_at", 2016-07-06 21:41:11 UTC], ["id", 5]]
+  [1m[35m (52.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 464ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-06 16:41:11 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 131ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for ::1 at 2016-07-06 16:41:14 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 146ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:41:14 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 153ms (Views: 123.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/productos/1/edit" for ::1 at 2016-07-06 16:41:18 -0500
+Processing by ProductosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/edit.html.erb within layouts/application
+  Rendered productos/_form.html.erb (6.0ms)
+  Rendered productos/edit.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 194ms (Views: 156.9ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/productos/1" for ::1 at 2016-07-06 16:41:25 -0500
+Processing by ProductosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bj1MwLE4X1if7NWlExTyh0xsct4qeP0IstL3yuWYIy/HY4meLlOuwuNi+RhRQ+vxWOe8sP4rEpcxU/vtBO4jtg==", "producto"=>{"articulos"=>"anticongelante", "existencia"=>"50", "stockmin"=>"45", "stockmax"=>"52", "disponibles"=>"yes"}, "commit"=>"Crear", "id"=>"1"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 50], ["updated_at", 2016-07-06 21:41:25 UTC], ["id", 1]]
+  [1m[35m (84.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/productos/1
+Completed 302 Found in 97ms (ActiveRecord: 85.0ms)
+
+
+Started GET "/productos/1" for ::1 at 2016-07-06 16:41:26 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 133ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:41:28 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 129ms (Views: 113.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departures" for ::1 at 2016-07-06 16:41:32 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 127ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures/new" for ::1 at 2016-07-06 16:41:33 -0500
+Processing by DeparturesController#new as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered departures/_form.html.erb (48.0ms)
+  Rendered departures/new.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 227ms (Views: 188.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/departures" for ::1 at 2016-07-06 16:41:45 -0500
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jfBxovPyxv4wwjKvUTKfJMvAFUoWavZcg7E3MMR5IaCYmxwPfcJjMGntAMlNNweLfTS2cOyeElIYCoYOXlQnTA==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"25", "solicita"=>"88", "autoriza"=>"88"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Departure:0x9612150>):
+  
+app/models/departure.rb:7:in `update_stock'
+app/controllers/departures_controller.rb:30:in `block in create'
+app/controllers/departures_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1258.1ms)
+Started POST "/departures" for ::1 at 2016-07-06 16:42:01 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jfBxovPyxv4wwjKvUTKfJMvAFUoWavZcg7E3MMR5IaCYmxwPfcJjMGntAMlNNweLfTS2cOyeElIYCoYOXlQnTA==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"25", "solicita"=>"88", "autoriza"=>"88"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 7.0ms)
+
+
+  
+NameError (undefined local variable or method `producto' for #<Departure:0xaf2fab0>):
+  
+app/models/departure.rb:7:in `update_stock'
+app/controllers/departures_controller.rb:30:in `block in create'
+app/controllers/departures_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1089.1ms)
+Started POST "/departures" for ::1 at 2016-07-06 16:42:11 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jfBxovPyxv4wwjKvUTKfJMvAFUoWavZcg7E3MMR5IaCYmxwPfcJjMGntAMlNNweLfTS2cOyeElIYCoYOXlQnTA==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"25", "solicita"=>"88", "autoriza"=>"88"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `productos' for #<Departure:0xad3e440>):
+  
+app/models/departure.rb:7:in `update_stock'
+app/controllers/departures_controller.rb:30:in `block in create'
+app/controllers/departures_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1098.1ms)
+Started POST "/departures" for ::1 at 2016-07-06 16:42:20 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jfBxovPyxv4wwjKvUTKfJMvAFUoWavZcg7E3MMR5IaCYmxwPfcJjMGntAMlNNweLfTS2cOyeElIYCoYOXlQnTA==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"25", "solicita"=>"88", "autoriza"=>"88"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 0], ["updated_at", 2016-07-06 21:42:20 UTC], ["id", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "departures" ("fecha", "numero", "piezas", "solicita", "autoriza", "created_at", "updated_at", "articulos") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Wed, 06 Jul 2016], ["numero", 3], ["piezas", 25], ["solicita", "88"], ["autoriza", "88"], ["created_at", 2016-07-06 21:42:20 UTC], ["updated_at", 2016-07-06 21:42:20 UTC], ["articulos", "anticongelante"]]
+  [1m[35m (70.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/departures/30
+Completed 302 Found in 121ms (ActiveRecord: 74.0ms)
+
+
+Started GET "/departures/30" for ::1 at 2016-07-06 16:42:20 -0500
+Processing by DeparturesController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mDeparture Load (1.0ms)[0m  [1m[34mSELECT  "departures".* FROM "departures" WHERE "departures"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/show.html.erb within layouts/application
+  Rendered departures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 155ms (Views: 116.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/departures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/flexboxgrid.self-e46e46cea88b7a8fd0f2a36a1a98bf982dae7ee8d9905a528c9eba3be50f3d64.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/home.self-d21b8b21b06ba38c59526de66d099bf97695d8dd8e2f4fe8b97ea7331b63fed0.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/productos.self-979a15e3fa49db2a1532579f9c7418bb3d1cd2e90c707f038373a9b348561bf7.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/style.self-7370f5142e6c06ee053efa1d333e711a63664fd1ec814df69c0e879387e92474.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/turbolinks.self-ff1d37d088bcba87ddd5a9edcbdbf45f1103309d3785dfd2324d668bde626e5d.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/departures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/vista.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/assets/milligram.self-30c00dfeb1f439a67740e6d0459121a389dbfe1aca577b4d90f1dab805598dd1.css?body=1" for ::1 at 2016-07-06 16:42:21 -0500
+Started GET "/departures" for ::1 at 2016-07-06 16:42:23 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 130ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-06 16:42:28 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 126ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:42:30 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 134ms (Views: 117.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:47:14 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 177ms (Views: 141.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/flexboxgrid.self-e46e46cea88b7a8fd0f2a36a1a98bf982dae7ee8d9905a528c9eba3be50f3d64.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/home.self-d21b8b21b06ba38c59526de66d099bf97695d8dd8e2f4fe8b97ea7331b63fed0.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/departures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/milligram.self-30c00dfeb1f439a67740e6d0459121a389dbfe1aca577b4d90f1dab805598dd1.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/style.self-7370f5142e6c06ee053efa1d333e711a63664fd1ec814df69c0e879387e92474.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/turbolinks.self-ff1d37d088bcba87ddd5a9edcbdbf45f1103309d3785dfd2324d668bde626e5d.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/departures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/vista.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/assets/productos.self-979a15e3fa49db2a1532579f9c7418bb3d1cd2e90c707f038373a9b348561bf7.css?body=1" for ::1 at 2016-07-06 16:47:15 -0500
+Started GET "/productos/1/edit" for ::1 at 2016-07-06 16:47:18 -0500
+Processing by ProductosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/edit.html.erb within layouts/application
+  Rendered productos/_form.html.erb (3.0ms)
+  Rendered productos/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 146ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/productos/1" for ::1 at 2016-07-06 16:47:23 -0500
+Processing by ProductosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NTq1CG+DT4HuuJXN/aChH2xr4zQVIQpd+PJi68K7pj70ZHBW8Oi+G5I2uXC/97hpeOAtWsFy5cJ7c27MI82mpw==", "producto"=>{"articulos"=>"anticongelante", "existencia"=>"50", "stockmin"=>"45", "stockmax"=>"52", "disponibles"=>"yes"}, "commit"=>"Crear", "id"=>"1"}
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 50], ["updated_at", 2016-07-06 21:47:23 UTC], ["id", 1]]
+  [1m[35m (64.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/productos/1
+Completed 302 Found in 74ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/productos/1" for ::1 at 2016-07-06 16:47:23 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 142ms (Views: 125.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:47:27 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 129ms (Views: 113.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departures" for ::1 at 2016-07-06 16:47:29 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (1.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 144ms (Views: 124.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/departures/new" for ::1 at 2016-07-06 16:47:34 -0500
+Processing by DeparturesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/new.html.erb within layouts/application
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered departures/_form.html.erb (6.0ms)
+  Rendered departures/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 154ms (Views: 136.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/departures" for ::1 at 2016-07-06 16:47:49 -0500
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i4zSvCOORSWvy0mq/rhTacrQ2ZotQJQ//fRYOC/ryj+e578Rrb7g6/bke8zivcvGfCR6oNe0cDFmT+kGtcbM0w==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"8", "solicita"=>"s", "autoriza"=>"sdad"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `existencia' for #<Departure:0xc1d3ce8>):
+  
+app/models/departure.rb:8:in `update_stock'
+app/controllers/departures_controller.rb:30:in `block in create'
+app/controllers/departures_controller.rb:29:in `create'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1100.1ms)
+Started POST "/departures" for ::1 at 2016-07-06 16:48:37 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i4zSvCOORSWvy0mq/rhTacrQ2ZotQJQ//fRYOC/ryj+e578Rrb7g6/bke8zivcvGfCR6oNe0cDFmT+kGtcbM0w==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"3", "articulos"=>"anticongelante", "piezas"=>"8", "solicita"=>"s", "autoriza"=>"sdad"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (2.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 0], ["updated_at", 2016-07-06 21:48:37 UTC], ["id", 1]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "departures" ("fecha", "numero", "piezas", "solicita", "autoriza", "created_at", "updated_at", "articulos") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Wed, 06 Jul 2016], ["numero", 3], ["piezas", 8], ["solicita", "s"], ["autoriza", "sdad"], ["created_at", 2016-07-06 21:48:37 UTC], ["updated_at", 2016-07-06 21:48:37 UTC], ["articulos", "anticongelante"]]
+  [1m[35m (136.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/departures/31
+Completed 302 Found in 199ms (ActiveRecord: 144.0ms)
+
+
+Started GET "/departures/31" for ::1 at 2016-07-06 16:48:37 -0500
+Processing by DeparturesController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT  "departures".* FROM "departures" WHERE "departures"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/show.html.erb within layouts/application
+  Rendered departures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 174ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-d21b8b21b06ba38c59526de66d099bf97695d8dd8e2f4fe8b97ea7331b63fed0.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/milligram.self-30c00dfeb1f439a67740e6d0459121a389dbfe1aca577b4d90f1dab805598dd1.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/productos.self-979a15e3fa49db2a1532579f9c7418bb3d1cd2e90c707f038373a9b348561bf7.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/entradas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/departures.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/style.self-7370f5142e6c06ee053efa1d333e711a63664fd1ec814df69c0e879387e92474.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/application.self-afb36eb6d6e4b0c38ddba594ccf8a1055fc00e3f4d9d8c0b810d150873823004.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/turbolinks.self-ff1d37d088bcba87ddd5a9edcbdbf45f1103309d3785dfd2324d668bde626e5d.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/action_cable.self-97a1acc11db2782c1b61ce874bff887f64e903d3cb2b533eff50fb799c873c70.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/departures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/entradas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/productos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/vista.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/assets/flexboxgrid.self-e46e46cea88b7a8fd0f2a36a1a98bf982dae7ee8d9905a528c9eba3be50f3d64.css?body=1" for ::1 at 2016-07-06 16:48:38 -0500
+Started GET "/departures" for ::1 at 2016-07-06 16:48:40 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 143ms (Views: 127.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:48:44 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 131ms (Views: 116.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:48:46 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 134ms (Views: 118.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos/13/edit" for ::1 at 2016-07-06 16:49:42 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by ProductosController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/edit.html.erb within layouts/application
+  Rendered productos/_form.html.erb (4.0ms)
+  Rendered productos/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 184ms (Views: 138.1ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/productos/13" for ::1 at 2016-07-06 16:49:46 -0500
+Processing by ProductosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LvDMZly56AuzT30yvjJ4J9WxBHQpFt1f7BWAdc+z8ao4hofLApKXSzg20I3k9SB5sz2c7T/hWPVbId532GpFDg==", "producto"=>{"articulos"=>"calaveras", "existencia"=>"88", "stockmin"=>"50", "stockmax"=>"150", "disponibles"=>"yes"}, "commit"=>"Crear", "id"=>"13"}
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 88], ["updated_at", 2016-07-06 21:49:46 UTC], ["id", 13]]
+  [1m[35m (64.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/productos/13
+Completed 302 Found in 74ms (ActiveRecord: 67.0ms)
+
+
+Started GET "/productos/13" for ::1 at 2016-07-06 16:49:46 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProducto Load (1.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/show.html.erb within layouts/application
+  Rendered productos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 140ms (Views: 125.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/productos/departures" for ::1 at 2016-07-06 16:49:48 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"departures"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Producto with 'id'=departures):
+  
+app/controllers/productos_controller.rb:71:in `set_producto'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1232.1ms)
+Started GET "/productos/departures" for ::1 at 2016-07-06 16:49:58 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"departures"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 11ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Producto with 'id'=departures):
+  
+app/controllers/productos_controller.rb:71:in `set_producto'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1119.1ms)
+Started GET "/productos/departures" for ::1 at 2016-07-06 16:50:12 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at C:/toro/inventarios/app/controllers/application_controller.rb:5)
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"departures"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Producto with 'id'=departures):
+  
+app/controllers/productos_controller.rb:71:in `set_producto'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1098.1ms)
+Started GET "/productos/departures" for ::1 at 2016-07-06 16:51:00 -0500
+Processing by ProductosController#show as HTML
+  Parameters: {"id"=>"departures"}
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT  "productos".* FROM "productos" WHERE "productos"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Producto with 'id'=departures):
+  
+app/controllers/productos_controller.rb:71:in `set_producto'
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1237.1ms)
+Started GET "/departures" for ::1 at 2016-07-06 16:51:07 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (1.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 212ms (Views: 179.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:51:09 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 136ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/entradas" for ::1 at 2016-07-06 16:51:10 -0500
+Processing by EntradasController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering entradas/index.html.erb within layouts/application
+  [1m[36mEntrada Load (0.0ms)[0m  [1m[34mSELECT "entradas".* FROM "entradas"[0m
+  Rendered entradas/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 178ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for ::1 at 2016-07-06 16:51:12 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (1.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 131ms (Views: 114.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departures/new" for ::1 at 2016-07-06 16:51:13 -0500
+Processing by DeparturesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/new.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered departures/_form.html.erb (6.0ms)
+  Rendered departures/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 157ms (Views: 143.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departures" for ::1 at 2016-07-06 16:51:21 -0500
+Processing by DeparturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BPDXtXFc11OrNYgHUn23yrlXQLwjgBW0CpS3oOb5trURm7oY/2xynfIaumFOeC9lD6Pjhtl08bqRLwaefNSwWQ==", "departure"=>{"fecha(1i)"=>"2016", "fecha(2i)"=>"7", "fecha(3i)"=>"6", "numero"=>"2", "articulos"=>"anticongelante", "piezas"=>"12", "solicita"=>"12", "autoriza"=>"12312"}, "commit"=>"Create Departure"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[33mUPDATE "productos" SET "existencia" = ?, "updated_at" = ? WHERE "productos"."id" = ?[0m  [["existencia", 0], ["updated_at", 2016-07-06 21:51:21 UTC], ["id", 13]]
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "departures" ("fecha", "numero", "piezas", "solicita", "autoriza", "created_at", "updated_at", "articulos") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["fecha", Wed, 06 Jul 2016], ["numero", 2], ["piezas", 12], ["solicita", "12"], ["autoriza", "12312"], ["created_at", 2016-07-06 21:51:21 UTC], ["updated_at", 2016-07-06 21:51:21 UTC], ["articulos", "anticongelante"]]
+  [1m[35m (241.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/departures/32
+Completed 302 Found in 252ms (ActiveRecord: 241.0ms)
+
+
+Started GET "/departures/32" for ::1 at 2016-07-06 16:51:21 -0500
+Processing by DeparturesController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT  "departures".* FROM "departures" WHERE "departures"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/show.html.erb within layouts/application
+  Rendered departures/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 146ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departures" for ::1 at 2016-07-06 16:51:23 -0500
+Processing by DeparturesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering departures/index.html.erb within layouts/application
+  [1m[36mDeparture Load (0.0ms)[0m  [1m[34mSELECT "departures".* FROM "departures"[0m
+  Rendered departures/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 171ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/productos" for ::1 at 2016-07-06 16:51:25 -0500
+Processing by ProductosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering productos/index.html.erb within layouts/application
+  [1m[36mProducto Load (0.0ms)[0m  [1m[34mSELECT "productos".* FROM "productos"[0m
+  Rendered productos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 130ms (Views: 116.0ms | ActiveRecord: 1.0ms)
+
+
